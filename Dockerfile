@@ -7,7 +7,7 @@ WORKDIR /var/www/html/
 RUN rm -rf *
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page281/romofyi.zip .
 RUN unzip romofyi.zip
-RUN cp -rvf ./romofyi/romofyi-html/* .
-RUN rm -rf romofyi romofyi.zip 
+RUN cp -rvf ./romofyi-html/* .
+RUN rm -rf romofyi-html romofyi.zip 
 CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
 EXPOSE 80
