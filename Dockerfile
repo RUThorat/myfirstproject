@@ -11,3 +11,5 @@ RUN cp -rvf ./romofyi-html/* .
 RUN rm -rf romofyi-html romofyi.zip 
 CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
 EXPOSE 80
+
+
